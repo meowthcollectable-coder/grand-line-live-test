@@ -2,7 +2,7 @@ import React from "react";
 import { ASSETS } from "../assets";
 
 export default function Ship({ name, pirate, progress, isWinner }) {
-  onst translateX = `${progress * 100}%`;
+  const translateX = `${progress * 100}%`;
   return (
     <div className="ship-row">
       <div className="ship-label">
