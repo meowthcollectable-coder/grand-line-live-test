@@ -8,9 +8,17 @@ body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:
   display: grid;
   grid-template-rows: repeat(24, 1fr);
   gap: 2px;
-  font-size: 13px;
+  font-size: 14px;
+  /* se serve, rendi l’altezza totale fissata */
+  height: calc(100vh - 140px); /* adatta questo valore se hai header o padding */
+  overflow: hidden;
 }
-.leader-row{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.leader-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 0;
+}
 .leader-name{flex:1;font-weight:700}
 .leader-points{width:48px;text-align:right;font-variant-numeric:tabular-nums}
 .leader-bar{width:100%;background:rgba(255,255,255,.06);height:6px;border-radius:6px;overflow:hidden;margin-left:8px}
