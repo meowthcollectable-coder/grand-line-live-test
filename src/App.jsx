@@ -78,7 +78,11 @@ export default function App() {
     }
   };
 
-  const normalize = (points) => Math.min(1, (points/Math.max(1,maxPoints)));
+ const normalize = (points) => {
+  const capped = Math.min(points, 200); // 👈 limite massimo a 200 punti
+  const denominator = Math.max(1, Math.min(maxPoints, 250));
+  return Math.min(1, capped / denominator);
+};
 
   return (
     <div className="app">
