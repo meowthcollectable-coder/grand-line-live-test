@@ -63,7 +63,7 @@ export default function App() {
       } catch(e){ console.error(e); }
     }
     poll();
-    const id=setInterval(poll, 10000);
+    const id=setInterval(poll, 200);
     return ()=>{ cancelled=true; clearInterval(id); };
   }, []);
 
