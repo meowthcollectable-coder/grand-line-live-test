@@ -18,8 +18,8 @@ body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:
   align-items: center;
   gap: 6px;
   min-height: 0;
-  line-height: 0.8;   /* meno spazio verticale tra le righe */
-  padding: 2px 0;     /* opzionale: riduce il padding verticale */
+  line-height: 0.1;   /* meno spazio verticale tra le righe */
+  padding: 1px 0;     /* opzionale: riduce il padding verticale */
 }
 .leader-name{flex:1;font-weight:700}
 .leader-points{width:48px;text-align:right;font-variant-numeric:tabular-nums}
